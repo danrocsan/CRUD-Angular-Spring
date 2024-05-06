@@ -16,9 +16,10 @@ export class CoursesService {
   constructor(private httpCliente: HttpClient) { }
 
   list() {
-    return this.httpCliente.get<Course[]>(this.API).pipe(
+    return this.httpCliente.get<Course[]>(this.API)
+    .pipe(
       first(),
-      delay( 5000),
+      //delay(5000),
       tap(courses => console.log(courses))
     );
   }

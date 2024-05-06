@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "postinstall": "ngcc"
+
+
   },
   "private": true,
   "dependencies": {
@@ -38,4 +41,6 @@
     "karma-jasmine-html-reporter": "~1.7.0",
     "typescript": "~4.3.5"
   }
+
+
 }
